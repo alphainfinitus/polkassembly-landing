@@ -41,7 +41,7 @@ export default function TopFeaturesSection() {
 			 <SectionHeading title='Top Features' />
 
        {/* sub-heading */}
-      <div className="flex justify-center mt-24 mx-12">
+      <div className="flex justify-center mt-20 mx-12">
         {featureCard(featureCardType.ConnectingTheDots, activeCard === featureCardType.ConnectingTheDots)}
         {featureCard(featureCardType.IntuitiveUXUI, activeCard === featureCardType.IntuitiveUXUI)}
       </div>
