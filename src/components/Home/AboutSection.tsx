@@ -1,21 +1,13 @@
 import React from 'react'
 import headerImg from '../../assets/images/header-img.svg'
 import aboutImg from '../../assets/images/about-img.svg'
+import SectionHeading from './SectionHeading'
 
 
 export default function AboutSection() {
 	return (
 		<section id="about-section" className="my-28 mx-auto">
-      {/* heading */}
-      <div className="flex justify-between items-center">
-        <img src={headerImg} className="h-auto w-1/3 rotate-180" />
-        <div className="flex items-center">
-          <span className="pink-circle"></span>
-          <h1 className="text-3xl mx-6">About</h1>
-          <span className="pink-circle"></span>
-        </div>
-        <img src={headerImg} className="h-auto w-1/3" />
-      </div>
+      <SectionHeading title='About' />
 
       {/* content */}
       <div className="flex items-center justify-center mt-24">

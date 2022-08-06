@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { randFloat, randInt } from 'three/src/math/MathUtils';
 
 export default function HeroSection() {
+
+	const heroSectionRef = useRef<HTMLHeadingElement>(null);
+
 	function randItem(items: any[]) {
 		return items[Math.floor(Math.random()*items.length)]
 	}
@@ -86,8 +89,9 @@ export default function HeroSection() {
 		
 		// Camera
 		const canvas = document.querySelector('canvas#pa-logo-webgl') as HTMLCanvasElement;
+		const heroSection =  heroSectionRef.current;
 		const sizes = {
-			width: window.innerWidth - 17,
+			width: Number(heroSection!.offsetWidth),
 			height: 500
 		}
 		
@@ -167,7 +171,8 @@ export default function HeroSection() {
 		}
 
 		function resizeHelper(){
-			sizes.width = window.innerWidth - 17;
+			const heroSection =  heroSectionRef.current;
+			sizes.width = heroSection!.offsetWidth;
 		
 			//update camera
 			camera.aspect = sizes.width / sizes.height;
@@ -201,17 +206,19 @@ export default function HeroSection() {
 			window.removeEventListener("resize", resizeHelper);
 			cancel = true;
 		}
-	}, []);
+	}, [heroSectionRef.current]);
 
 	return (
-    <section id="hero-section" className="h-[500px] flex">
-      <div className="h-[500px] flex items-end relative z-10">
-        <div className="ml-16 mb-16 text-white">
-          <h1 className="text-5xl uppercase text-pa-pink">Polkassembly</h1>
-          <h1 className="text-2xl mt-4 text-black">Democratizing governance for<br/>substrate chains</h1>
-        </div>
-      </div>
-      <canvas id="pa-logo-webgl" className="block w-full h-[500px] absolute z-0"></canvas>
-    </section>
+		<section className="container">
+			<div id="hero-section" ref={heroSectionRef} className="h-[500px] flex">
+				<div className="h-[500px] flex items-end relative z-10">
+					<div className="ml-16 mb-16 text-white">
+						<h1 className="text-5xl uppercase text-pa-pink">Polkassembly</h1>
+						<h1 className="text-2xl mt-4 text-black">Democratizing governance for<br/>substrate chains</h1>
+					</div>
+				</div>
+				<canvas id="pa-logo-webgl" className="w-full h-[500px] absolute z-0"></canvas>
+			</div>
+		</section>
 	)
 }

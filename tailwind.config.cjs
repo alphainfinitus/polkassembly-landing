@@ -12,7 +12,10 @@ module.exports = {
         'pa-pink':'#E80B81',
         'pa-pink-light':'#FFC9E5',
         'pa-purple': '#E7BCFB'
-      }
+      },
+      container: {
+        center: true,
+      },
     },
   },
   plugins: [],
