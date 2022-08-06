@@ -51,7 +51,7 @@ export default function HeroSection() {
 		mesh.rotation.x = Math.PI/2
 		mesh.rotation.z = startAng
 		mesh.position.y = y
-		mesh.speed = speed * 0.002
+		mesh.speed = speed * 0.001
 		mesh.receiveShadow = true
 		mesh.castShadow = true
 		ringMeshes.push(mesh)

@@ -69,7 +69,7 @@ export default function LiveChainsSection() {
 
   const chainCircle = (image:string, title:string) => {
     return(
-      <div key={title} className="chain-circle flex flex-col items-center justify-center my-2 lg:my-0 mx-auto md:mx-6 rounded-full h-24 w-24 md:h-48 md:w-48 border-[1px] border-pa-pink-light shadow-[3px_8px_10px_-5px_#E5007A]">
+      <div key={title} className="flex flex-col items-center justify-center my-2 lg:my-0 mx-auto md:mx-6 rounded-full h-24 w-24 md:h-48 md:w-48 border-[1px] border-pa-pink-light shadow-[3px_8px_10px_-5px_#E5007A] transition-transform transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[5px_10px_12px_-3px_#E5007A]">
         <img src={image} className="rounded-full h-auto w-8 md:w-16 mx-auto" />
         <h3 className='mt-1 md:mt-5 text-sm md:text-lg font-bold text-gray-600 capitalize'>{title}</h3>
       </div>
