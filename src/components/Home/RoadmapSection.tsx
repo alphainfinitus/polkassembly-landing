@@ -42,9 +42,9 @@ export default function RoadmapSection() {
 
 	const quarterDiv = (index:number, title: string, list: string[]) => {
 		return (
-			<div onMouseEnter={() => setActiveElement(index)} key={title} className={`group justify-center h-[500px] w-full p-6 transition-all transform border-r border-r-pa-pink hover:block hover:bg-pa-pink hover:border-r-0 hover:rounded-lg ${activeElement === index ? 'bg-pa-pink border-r-0 rounded-lg block' : 'flex'} ${index === 2 ? 'border-r-0' : ''}`}>
+			<div onMouseEnter={() => setActiveElement(index)} key={title} className={`group justify-center h-[500px] w-full p-6 ease-in-out transition-all transform duration-[700ms] border-r border-r-pa-pink hover:block hover:bg-pa-pink hover:border-r-0 hover:rounded-lg ${activeElement === index ? 'bg-pa-pink border-r-0 rounded-lg block' : 'flex'} ${index === 2 ? 'border-r-0' : ''}`}>
 
-				<h4 className={`whitespace-pre-wrap text-center font-bold group-hover:text-3xl group-hover:text-white group-hover:self-start ${activeElement === index ? 'text-3xl text-white self-start' : 'text-2xl text-gray-600 self-center'}`}>{title}</h4>
+				<h4 className={`whitespace-pre-wrap text-center font-bold group-hover:text-3xl group-hover:text-white ${activeElement === index ? 'text-3xl text-white' : 'text-2xl text-gray-600 self-center'}`}>{title}</h4>
 				
 				<div className={`text-center mt-16 group-hover:block ${activeElement === index ? 'block' : 'hidden'}`}>
 					{list.map((text, i) =>
@@ -80,7 +80,7 @@ export default function RoadmapSection() {
 	}
 
 	return (
-		<section id="about-section" className="my-28 mx-auto">
+		<section id="about-section" className="container my-28 mx-auto">
       <SectionHeading title='Roadmap' />
       
       <div className="hidden lg:flex lg:flex-row mx-6 items-center justify-center mt-20">
