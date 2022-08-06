@@ -211,10 +211,10 @@ export default function HeroSection() {
 	return (
 		<section className="container">
 			<div id="hero-section" ref={heroSectionRef} className="h-[500px] flex">
-				<div className="h-[500px] flex items-end relative z-10">
-					<div className="ml-16 mb-16 text-white">
-						<h1 className="text-5xl uppercase text-pa-pink">Polkassembly</h1>
-						<h1 className="text-2xl mt-4 text-black">Democratizing governance for<br/>substrate chains</h1>
+				<div className="h-[500px] flex md:items-end relative z-10">
+					<div className="ml-4 mt-16 mb-16 md:ml-16 md:mt-0 text-white">
+						<h1 className="text-3xl md:text-5xl uppercase text-pa-pink">Polkassembly</h1>
+						<h1 className="text-xl md:text-2xl mt-4 text-black">Democratizing governance for<br/>substrate chains</h1>
 					</div>
 				</div>
 				<canvas id="pa-logo-webgl" className="w-full h-[500px] absolute z-0"></canvas>
