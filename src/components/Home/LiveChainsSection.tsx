@@ -64,14 +64,14 @@ export default function LiveChainsSection() {
     {
       image: polkadotLogo,
       title: '14'
-    },
+    }
   ];
 
   const chainCircle = (image:string, title:string) => {
     return(
-      <div key={title} className="flex flex-col items-center justify-center mx-6 rounded-full h-48 w-48 border-[1px] border-pa-pink-light shadow-[3px_8px_10px_-5px_#E5007A]">
-        <img src={image} className="rounded-full h-auto w-16 mx-auto" />
-        <h3 className='mt-5 text-lg font-bold text-gray-600 capitalize'>{title}</h3>
+      <div key={title} className="chain-circle flex flex-col items-center justify-center my-2 lg:my-0 mx-auto md:mx-6 rounded-full h-24 w-24 md:h-48 md:w-48 border-[1px] border-pa-pink-light shadow-[3px_8px_10px_-5px_#E5007A]">
+        <img src={image} className="rounded-full h-auto w-8 md:w-16 mx-auto" />
+        <h3 className='mt-1 md:mt-5 text-sm md:text-lg font-bold text-gray-600 capitalize'>{title}</h3>
       </div>
     )
   }
@@ -79,19 +79,25 @@ export default function LiveChainsSection() {
   const chainPage = (parachainList: {title:string, image:string}[]) => {
     return (
       <>
-        <div className="flex flex-col md:flex-row items-center justify-center">
+        <div className="hidden lg:flex lg:flex-row items-center justify-center">
           {parachainList.slice(0, parachainList.length > 3 ? 4 : parachainList.length).map(parachainObj =>
             chainCircle(parachainObj.image, parachainObj.title)
           )}
         </div>
 
         {parachainList.length > 4 &&
-          <div className="flex flex-col md:flex-row items-center justify-center mt-12">
+          <div className="hidden lg:flex lg:flex-row items-center justify-center mt-0 lg:mt-12">
             {parachainList.slice(4, parachainList.length).map(parachainObj =>
               chainCircle(parachainObj.image, parachainObj.title)
             )}
           </div>
         }
+
+        <div id='mobileLiveChains' className="grid grid-cols-3 gap-1 lg:hidden">
+          {parachainList.map(parachainObj =>
+            chainCircle(parachainObj.image, parachainObj.title)
+          )}
+        </div>
       </>
     );
   }
@@ -99,7 +105,7 @@ export default function LiveChainsSection() {
   const paginationCircle = (index:number) => <span 
     key={index}
     onClick={() => setCurrPage(index)}
-    className={`mx-1 cursor-pointer inline-block ${currPage == index ? 'bg-pa-pink' : 'bg-gray-500'} rounded-full h-[12px] w-[12px]`}
+    className={`mx-1 cursor-pointer inline-block ${currPage == index ? 'bg-pa-pink' : 'bg-gray-500'} rounded-full h-[14px] w-[14px]`}
     ></span>;
   
   const totalPages:number = Math.ceil(parachains.length/7);
