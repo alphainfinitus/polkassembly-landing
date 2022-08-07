@@ -20,7 +20,7 @@ export default function HeroSection() {
 	const ringMeshes: any[] = [];
 	const ringsCont = new THREE.Group();
 	ringsCont.position.set(90,10,0);
-	ringsCont.rotation.x = 70
+	ringsCont.rotation.x = 10
 	ringsCont.rotation.z = 0
 	ringsCont.scale.set(1, 1, 1);
 	scene.add(ringsCont);
@@ -50,7 +50,7 @@ export default function HeroSection() {
 		const mesh = new THREE.Mesh( geo, mat ) as any
 		mesh.rotation.x = Math.PI/2
 		mesh.rotation.z = startAng
-		mesh.position.y = y
+		mesh.position.y = y * randInt(-1.5, 0.5)
 		mesh.speed = speed * 0.001
 		mesh.receiveShadow = true
 		mesh.castShadow = true

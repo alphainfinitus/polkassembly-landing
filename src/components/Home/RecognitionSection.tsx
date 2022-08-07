@@ -33,7 +33,7 @@ export default function RecognitionSection() {
             Polkassembly is one of the projects that have been carefully selected by Parity to participate in Substrate Builders Program.
             Please see the Substrate projects page that mentions our project.
             <br/>
-            <u> <a href='https://substrate.io/ecosystem/projects/' target='_blank' className='text-center text-pa-pink font-semibold'>Read More</a> </u>
+            <u> <a href='https://substrate.io/ecosystem/projects/' target="_blank" rel="noopener noreferrer" className="text-center text-pa-pink font-semibold">Read More</a> </u>
           </p>
         </div>
       </div>

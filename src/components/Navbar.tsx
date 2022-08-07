@@ -10,8 +10,7 @@ export default function Navbar() {
           <img src={polkassemblyLogo} className="h-auto w-32" />
         </Link>
         <div className="ml-auto mr-6 flex items-center">
-          <Link to='/about' className="mx-2">About</Link>
-          <Link to='/sign-in' className="mx-2">Sign In</Link>
+          <Link to='/launch-app' className="mx-2">Launch App</Link>
         </div>
       </div>
     </nav>

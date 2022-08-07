@@ -63,7 +63,7 @@ export default function RoadmapSection() {
 	const quarterDivMobile = (index:number, title: string, list: string[]) => {
 		return (
 			<div key={title} className='mt-16 p-5 pb-8 border border-pa-pink shadow-md rounded-lg w-[90%]'>
-				<h4 className='whitespace-pre-wrap text-center font-bold text-2xl text-gray-600'>{title}</h4>
+				<h4 className='whitespace-pre-wrap text-center font-bold text-2xl text-pa-pink'>{title}</h4>
 
 				<div className='text-center mt-10'>
 					{list.map((text, i) =>
