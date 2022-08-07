@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { randFloat, randInt } from 'three/src/math/MathUtils';
+import { socialLinksUL } from './Footer';
 
 export default function HeroSection() {
 
@@ -19,10 +20,10 @@ export default function HeroSection() {
 	//Object
 	const ringMeshes: any[] = [];
 	const ringsCont = new THREE.Group();
-	ringsCont.position.set(90,10,0);
+	ringsCont.position.set(110,20,0);
 	ringsCont.rotation.x = 10
 	ringsCont.rotation.z = 0
-	ringsCont.scale.set(1, 1, 1);
+	ringsCont.scale.set(0.8, 0.8, 0.8);
 	scene.add(ringsCont);
 
 	function genRing(color:number, radius:number, width:number, startAng:number, ang:number, y:number, speed:number) {
@@ -141,16 +142,16 @@ export default function HeroSection() {
 		function followCameraWithMouseHelper(e:MouseEvent) {
 			cursorPos.x = -1 * e.clientX / sizes.width - 0.5;
 			cursorPos.y = e.clientY / sizes.height - 0.5;
-			camera.position.x = camPos.x + cursorPos.x * 8;
-			camera.position.y = camPos.y + cursorPos.y * 8;
+			camera.position.x = camPos.x + cursorPos.x * 15;
+			camera.position.y = camPos.y + cursorPos.y * 15;
 			controls.update();
 		}
 		
 		function followCameraWithTouchHelper(e:TouchEvent) {
 			cursorPos.x = e.touches[0].clientX / sizes.width - 0.5;
 			cursorPos.y = e.touches[0].clientY / sizes.height - 0.5;
-			camera.position.x = camPos.x + cursorPos.x * 8;
-			camera.position.y = camPos.y + +cursorPos.y * 8;
+			camera.position.x = camPos.x + cursorPos.x * 15;
+			camera.position.y = camPos.y + +cursorPos.y * 15;
 			controls.update();
 		}
 		
@@ -209,12 +210,14 @@ export default function HeroSection() {
 	}, [heroSectionRef.current]);
 
 	return (
-		<section className="container">
+		<section>
 			<div id="hero-section" ref={heroSectionRef} className="h-[500px] flex">
-				<div className="h-[500px] flex lg:items-end relative z-10">
-					<div className="ml-4 mt-16 mb-16 lg:ml-16 lg:mt-0 text-white">
+				<div className="container h-[500px] flex lg:items-end relative z-10">
+					<div className="ml-4 mt-16 mb-16 md:ml-16 lg:ml-48 lg:mb-32 text-white">
 						<h1 className="text-3xl lg:text-5xl uppercase text-pa-pink">Polkassembly</h1>
 						<h1 className="text-xl lg:text-2xl mt-4 text-black">Democratizing governance for<br/>substrate chains</h1>
+
+						{ socialLinksUL('text-pa-pink') }
 					</div>
 				</div>
 				<canvas id="pa-logo-webgl" className="w-full h-[500px] absolute z-0"></canvas>

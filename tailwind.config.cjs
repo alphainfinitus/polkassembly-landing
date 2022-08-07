@@ -11,7 +11,8 @@ module.exports = {
       colors: {
         'pa-pink':'#E80B81',
         'pa-pink-light':'#FFC9E5',
-        'pa-purple': '#E7BCFB'
+        'pa-purple': '#F9D2FF',
+        'pa-purple-light': '#F1EBFF'
       },
       container: {
         center: true,
