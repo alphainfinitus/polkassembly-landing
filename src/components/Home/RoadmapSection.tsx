@@ -80,7 +80,7 @@ export default function RoadmapSection() {
 	}
 
 	return (
-		<section id="about-section" className="container my-28 mx-auto">
+		<section id='roadmap-section' className="container my-28 mx-auto">
       <SectionHeading title='Roadmap' />
       
       <div className="hidden lg:flex lg:flex-row mx-6 items-center justify-center mt-20">

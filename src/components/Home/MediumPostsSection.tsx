@@ -41,7 +41,7 @@ export default function MediumPostsSection() {
   };
   
 	return (
-		<section id="about-section" className="my-28 mx-auto">
+		<section className="my-28 mx-auto">
       <SectionHeading title='Medium Posts' />
 
       {blogs && <div className="container mt-20">

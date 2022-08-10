@@ -126,7 +126,7 @@ export default function LiveChainsSection() {
         
 
 	return (
-		<section id="about-section" className="my-28 mx-auto">
+		<section className="my-28 mx-auto">
       <SectionHeading title='Live Chains' />
 
       <div className="mt-20">

@@ -1,5 +1,5 @@
 import React from 'react'
-import polkassemblyLogo from '../../assets/images/pa-logo.svg'
+import polkassemblyLogoWhite from '../../assets/images/pa-logo-white.svg'
 import contactUsBg from '../../assets/images/contact-us-bg.svg'
 
 export const socialLinksUL = (colorClass?: string, iconClass ?: string, classes ?: string) => {
@@ -84,7 +84,7 @@ export default function Footer() {
 						{/* Logo and Socials */}
 						<div className='md:-mt-5'>
 							<div className="flex justify-center text-teal-300 sm:justify-start">
-								<img src={polkassemblyLogo} className="h-auto w-52" />
+								<img src={polkassemblyLogoWhite} className="h-auto w-52" />
 							</div>
 
 							{socialLinksUL('', '', 'md:ml-3 justify-center md:justify-start')}

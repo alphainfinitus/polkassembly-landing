@@ -17,6 +17,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .swiper-button-next {
   background-image: url('./assets/images/right-chevron.svg');
   background-repeat: no-repeat;
@@ -38,4 +42,10 @@
 
 .swiper-button-prev::after {
   display: none;
+}
+
+#numbers-section {
+  background: url('./assets/images/dot-wave-bg.svg') no-repeat;
+  background-position: center;
+  background-size: cover;
 }

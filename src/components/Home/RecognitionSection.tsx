@@ -6,7 +6,7 @@ import web3Grant from '../../assets/images/web3-grant.svg'
 
 export default function RecognitionSection() {
 	return (
-		<section id="about-section" className="my-28 mx-auto">
+		<section className="my-28 mx-auto">
       <SectionHeading title='Recognition' />
       
       <div className="flex flex-col lg:flex-row items-start justify-center mt-20">
