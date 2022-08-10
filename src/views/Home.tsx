@@ -6,6 +6,7 @@ import Footer from '../components/Home/Footer'
 import RecognitionSection from '../components/Home/RecognitionSection'
 import RoadmapSection from '../components/Home/RoadmapSection'
 import TopFeaturesSection from '../components/Home/TopFeaturesSection'
+import MediumPostsSection from '../components/Home/MediumPostsSection'
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<LiveChainsSection />
 			<RecognitionSection />
 			<RoadmapSection />
+			<MediumPostsSection />
 			<Footer />
 		</>
 	)
