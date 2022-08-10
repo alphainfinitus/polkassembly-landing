@@ -1,8 +1,40 @@
 import React, { useState } from 'react'
 import SectionHeading from './SectionHeading'
 
-import kusamaLogo from '../../assets/parachain-logos/kusama-logo.gif'
 import polkadotLogo from '../../assets/parachain-logos/polkadot-logo.jpg'
+import kusamaLogo from '../../assets/parachain-logos/kusama-logo.gif'
+import moonriverLogo from '../../assets/parachain-logos/moonriver-logo.png'
+import moonbeamLogo from '../../assets/parachain-logos/moonbeam-logo.png'
+import acalaLogo from '../../assets/parachain-logos/acala-logo.jpg'
+import acuityLogo from '../../assets/parachain-logos/acuity-logo.jpg'
+import altairLogo from '../../assets/parachain-logos/altair-logo.jpeg'
+import amplitudeLogo from '../../assets/parachain-logos/amplitude-logo.png'
+import astarLogo from '../../assets/parachain-logos/astar-logo.png'
+import automataLogo from '../../assets/parachain-logos/automata-logo.jpg'
+import basiliskLogo from '../../assets/parachain-logos/basilisk-logo.jpg'
+import bifrostLogo from '../../assets/parachain-logos/bifrost-logo.png'
+import calamariLogo from '../../assets/parachain-logos/calamari-logo.png'
+import centrifugeLogo from '../../assets/parachain-logos/centrifuge-logo.png'
+import gearLogo from '../../assets/parachain-logos/gear-logo.jpg'
+import heikoLogo from '../../assets/parachain-logos/hydradx-logo.jpg'
+import hydradxLogo from '../../assets/parachain-logos/hydradx-logo.jpg'
+import karuraLogo from '../../assets/parachain-logos/karura-logo.jpg'
+import khalaLogo from '../../assets/parachain-logos/khala-logo.png'
+import kiltLogo from '../../assets/parachain-logos/kilt-logo.png'
+import mantaLogo from '../../assets/parachain-logos/manta-logo.jpg'
+import moonbaseLogo from '../../assets/parachain-logos/moonbase-logo.png'
+import parallelLogo from '../../assets/parachain-logos/parallel-logo.jpg'
+import pendulumLogo from '../../assets/parachain-logos/pendulum-logo.jpg'
+import pioneerLogo from '../../assets/parachain-logos/bitcountrypioneer-logo.jpg'
+import polkadexLogo from '../../assets/parachain-logos/polkadex-logo.jpg'
+import robonomicsLogo from '../../assets/parachain-logos/robonomics-logo.jpg'
+import shibuyaLogo from '../../assets/parachain-logos/shiden-logo.jpg'
+import shidenLogo from '../../assets/parachain-logos/shiden-logo.jpg'
+import tanganikaLogo from '../../assets/parachain-logos/tanganika-logo.png'
+import tinkerLogo from '../../assets/parachain-logos/chain-logo.jpg'
+import turingLogo from '../../assets/parachain-logos/turing-logo.png'
+import westendLogo from '../../assets/parachain-logos/westend-logo.jpg'
+
 
 
 export default function LiveChainsSection() {
@@ -10,69 +42,147 @@ export default function LiveChainsSection() {
 
   const parachains: {title:string, image:string}[] = [
     {
-      image: kusamaLogo,
-      title: 'Kusama'
-    },
-    {
       image: polkadotLogo,
-      title: 'Polkadot'
+      title: 'polkadot'
     },
     {
       image: kusamaLogo,
-      title: '3'
+      title: 'kusama'
     },
     {
-      image: polkadotLogo,
-      title: '4'
+      image: moonriverLogo,
+      title: 'moonriver'
     },
     {
-      image: kusamaLogo,
-      title: '5'
+      image: moonbeamLogo,
+      title: 'moonbeam'
     },
     {
-      image: polkadotLogo,
-      title: '6'
+      image: acalaLogo,
+      title: 'ACALA'
     },
     {
-      image: kusamaLogo,
-      title: '7'
+      image: acuityLogo,
+      title: 'acuity'
     },
     {
-      image: polkadotLogo,
-      title: '8'
+      image: altairLogo,
+      title: 'altair'
     },
     {
-      image: kusamaLogo,
-      title: '9'
+      image: amplitudeLogo,
+      title: 'amplitude'
     },
     {
-      image: polkadotLogo,
-      title: '10'
+      image: astarLogo,
+      title: 'astar'
     },
     {
-      image: kusamaLogo,
-      title: '11'
+      image: automataLogo,
+      title: 'automata'
     },
     {
-      image: polkadotLogo,
-      title: '12'
+      image: basiliskLogo,
+      title: 'basilisk'
     },
     {
-      image: polkadotLogo,
-      title: '13'
+      image: bifrostLogo,
+      title: 'bifrost'
     },
     {
-      image: polkadotLogo,
-      title: '14'
+      image: calamariLogo,
+      title: 'calamari'
+    },
+    {
+      image: centrifugeLogo,
+      title: 'centrifuge'
+    },
+    {
+      image: gearLogo,
+      title: 'gear'
+    },
+    {
+      image: heikoLogo,
+      title: 'heiko'
+    },
+    {
+      image: hydradxLogo,
+      title: 'hydradx'
+    },
+    {
+      image: karuraLogo,
+      title: 'karura'
+    },
+    {
+      image: khalaLogo,
+      title: 'khala'
+    },
+    {
+      image: kiltLogo,
+      title: 'kilt'
+    },
+    {
+      image: mantaLogo,
+      title: 'manta'
+    },
+    {
+      image: moonbaseLogo,
+      title: 'moonbase'
+    },
+    {
+      image: parallelLogo,
+      title: 'parallel'
+    },
+    {
+      image: pendulumLogo,
+      title: 'pendulum'
+    },
+    {
+      image: pioneerLogo,
+      title: 'pioneer'
+    },
+    {
+      image: polkadexLogo,
+      title: 'polkadex'
+    },
+    {
+      image: robonomicsLogo,
+      title: 'robonomics'
+    },
+    {
+      image: shibuyaLogo,
+      title: 'shibuya'
+    },
+    {
+      image: shidenLogo,
+      title: 'shiden'
+    },
+    {
+      image: tanganikaLogo,
+      title: 'tanganika'
+    },
+    {
+      image: tinkerLogo,
+      title: 'tinker'
+    },
+    {
+      image: turingLogo,
+      title: 'turing'
+    },
+    {
+      image: westendLogo,
+      title: 'westend'
     }
   ];
 
   const chainCircle = (image:string, title:string) => {
+    const link = ["moonbase", "moonriver", "moonbeam", "kilt", "automata"].includes(title) ? `https://${title}.polkassembly.network` : `https://${title}.polkassembly.io`;
+    
     return(
-      <div key={title} className="flex flex-col items-center justify-center my-2 lg:my-0 mx-auto md:mx-6 rounded-full h-24 w-24 md:h-48 md:w-48 border-[1px] border-pa-pink-light transition-transform transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_8px_10px_-5px_#E5007A]">
+      <a href={link} key={title} rel="noopener noreferrer" target="_blank" className="flex flex-col items-center justify-center my-2 lg:my-0 mx-auto md:mx-6 rounded-full h-24 w-24 md:h-48 md:w-48 border-[1px] border-pa-pink-light transition-transform transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_8px_10px_-5px_#E5007A]">
         <img src={image} className="rounded-full h-auto w-8 md:w-16 mx-auto" />
-        <h3 className='mt-1 md:mt-5 text-sm md:text-lg font-bold text-gray-600 capitalize'>{title}</h3>
-      </div>
+        <h3 className='mt-1 md:mt-5 text-xs md:text-lg font-semibold text-gray-600 capitalize tracking-normal lg:tracking-widest'>{title}</h3>
+      </a>
     )
   }
 

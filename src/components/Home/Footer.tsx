@@ -84,10 +84,8 @@ export default function Footer() {
 						{/* Logo and Socials */}
 						<div className='md:-mt-5'>
 							<div className="flex justify-center text-teal-300 sm:justify-start">
-								<img src={polkassemblyLogoWhite} className="h-auto w-52" />
+								<img src={polkassemblyLogoWhite} className="h-auto w-52 md:w-64" />
 							</div>
-
-							{socialLinksUL('', '', 'md:ml-3 justify-center md:justify-start')}
 						</div>
 
 						{/* Links */}
@@ -164,6 +162,10 @@ export default function Footer() {
 												hello@polkassembly.io
 											</span>
 										</a>
+									</li>
+
+									<li>
+										{socialLinksUL('', 'w-5 h-5', 'justify-center md:justify-start')}
 									</li>
 								</ul>
 							</div>
