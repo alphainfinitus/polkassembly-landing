@@ -57,7 +57,6 @@ export default function MediumPostsSection() {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          // slidesPerView={3}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,

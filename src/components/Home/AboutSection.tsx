@@ -6,8 +6,8 @@ import SectionHeading from './SectionHeading'
 
 export default function AboutSection() {
 	return (
-		<section id="about-section" className="my-28 mx-auto container">
-      <SectionHeading title='About' withDots={false} />
+		<section id="about-section" className="mb-28 mx-auto container">
+      <SectionHeading title='About' />
       
       <div className="flex flex-col items-center justify-center mt-20">
         <div className="flex flex-col md:flex-row">
