@@ -69,7 +69,7 @@ export default function Footer() {
 	return (
 		<>
 			<div className='w-full -z-0 flex items-center flex-col'>
-				<img src={contactUsBg} className='h-auto w-[45rem] -mb-32 md:-mb-72' />
+				<img src={contactUsBg} className='h-auto w-[45rem] -mb-36 md:-mb-72' />
 
 				<h4 className='text-white text-center w-52 md:w-80 mb-6 md:mb-10 text-sm md:text-lg'>Want to know more about popular governance proposals and community updates?</h4>
 
