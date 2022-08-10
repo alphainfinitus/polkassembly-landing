@@ -65,10 +65,10 @@ export const socialLinksUL = (colorClass?: string, iconClass ?: string, classes 
 	);
 }
 
-export default function Footer() {
+export default function Footer({withContactUs = true}: {withContactUs?:boolean}) {
 	return (
 		<>
-			<div className='w-full -z-0 flex items-center flex-col'>
+			{withContactUs && <div className='w-full -z-0 flex items-center flex-col'>
 				<img src={contactUsBg} className='h-auto w-[45rem] -mb-36 md:-mb-72' />
 
 				<h4 className='text-white text-center w-52 md:w-80 mb-6 md:mb-10 text-sm md:text-lg'>Want to know more about popular governance proposals and community updates?</h4>
@@ -76,7 +76,7 @@ export default function Footer() {
 				<a href="mailto:hello@polkassembly.io" rel="noopener noreferrer" target="_blank" className='mb-2 md:mb-10 rounded-full bg-white px-2 py-1 md:px-4 md:py-2 text-sm text-pa-pink font-bold'>
 					Contact Us
 				</a>
-			</div>
+			</div>}
 
 			<footer className="bg-slate-900 relative z-10">
 				<div className="max-w-screen-xl px-4 pt-16 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
