@@ -13,19 +13,19 @@ export default function TopFeaturesSection() {
 
   const featureCard = (type:featureCardType, active:boolean) => {
     return (
-      <div className="w-96 mx-2 md:mx-9">
+      <div className="w-36 md:w-96 mx-2 md:mx-9">
         <div onClick={() => setActiveCard(type)} className="cursor-pointer relative block group h-36">
           <span className="absolute rounded-3xl inset-0 border-2 border-pa-pink border-dashed"></span>
         
           <div
             className={`relative rounded-3xl h-full ${active ? 'bg-pa-pink-light border-2 border-pa-pink-light -translate-x-2 -translate-y-2' : 'bg-pa-purple border-2 border-pa-purple'} transition-transform transform group-hover:-translate-x-2 group-hover:-translate-y-2`}
           >
-            <div className="px-6 opacity-100 relative">
+            <div className="px-3 md:px-6 opacity-100 relative">
               <h2 className={`mt-8 text-xl md:text-2xl font-medium ${active ? 'text-pa-pink' : 'text-black'}`}>{type}</h2>
             </div>
 
             {active &&
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-auto mt-4 md:mt-8 mr-2 text-pa-pink" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-auto mt-auto lg:mt-8 mr-2 text-pa-pink" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3" />
               </svg>
             }
