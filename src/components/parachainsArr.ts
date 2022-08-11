@@ -99,7 +99,7 @@ const parachainsArr: {title:string, image:string}[] = [
 	},
 	{
 		image: hydradxLogo,
-		title: 'hydradx'
+		title: 'hydraDX'
 	},
 	{
 		image: karuraLogo,

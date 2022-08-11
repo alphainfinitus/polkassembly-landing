@@ -16,7 +16,7 @@ export default function ChainsSection() {
 	}, [loadMore])
 
 	useEffect(() => {
-		const searchResultsLocal = parachains.filter(parachainObj => {
+		const searchResultsLocal = parachainsArr.filter(parachainObj => {
 				return parachainObj.title.toLowerCase().includes(searchInput.toLowerCase());
 		});
 
