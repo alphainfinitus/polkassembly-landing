@@ -36,10 +36,23 @@ export default function LiveChainsSection() {
         }
 
         <div id='mobileLiveChains' className="mx-2 grid grid-cols-3 gap-1 lg:hidden">
-          {parachainList.map(parachainObj =>
+          {parachainList.slice(0, parachainList.length > 5 ? parachainList.length - 1 : parachainList.length - 2).map((parachainObj) =>
             chainCircle(parachainObj.image, parachainObj.title)
           )}
         </div>
+
+        {parachainList.length > 5 &&
+          <div className="flex justify-center items-center lg:hidden">
+            {chainCircle(parachainList[parachainList.length-1].image, parachainList[parachainList.length-1].title)}
+          </div>
+        }
+
+        {parachainList.length == 5 &&
+          <div className="mx-14 flex justify-center items-center lg:hidden">
+            {chainCircle(parachainList[parachainList.length-2].image, parachainList[parachainList.length-2].title)}
+            {chainCircle(parachainList[parachainList.length-1].image, parachainList[parachainList.length-1].title)}
+          </div>
+        }
       </div>
     );
   }
