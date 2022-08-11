@@ -213,7 +213,7 @@ export default function HeroSection() {
 		<section>
 			<div id="hero-section" ref={heroSectionRef} className="h-[95vh] md:h-[90vh] -mt-24 flex bg-gradient-to-b from-pa-purple to-white">
 				<div className="container h-[500px] flex lg:items-end relative z-10 mt-32">
-					<div className="ml-4 mt-16 mb-16 md:ml-16 lg:ml-48 lg:mb-32 text-white">
+					<div className="ml-4 mt-16 mb-16 md:ml-16 lg:ml-40 xl:ml-48 lg:mb-32 text-white">
 						<h1 className="text-3xl lg:text-6xl uppercase text-pa-pink">Polkassembly</h1>
 						<h1 className="text-xl lg:text-3xl mt-4 text-black">Democratizing governance for<br/>substrate chains</h1>
 
