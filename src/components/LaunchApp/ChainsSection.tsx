@@ -1,10 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import parachainsArr from '../parachainsArr';
 
 export default function ChainsSection() {
+	const [parachains, setParachains] = useState<any[]>(parachainsArr.slice(0,12));
 	const [loadMore, setLoadMore] = useState<boolean>(false);
+	const [searchInput, setSearchInput] = useState<string>('');
+	const [searchResults, setSearchResults] = useState<any[]>([]);
 
-  const parachains = loadMore ? parachainsArr : parachainsArr.slice(0,12);
+	useEffect(() => {
+		if(loadMore) {
+			setParachains(parachainsArr);
+		} else {
+			setParachains(parachainsArr.slice(0,12));
+		}
+	}, [loadMore])
+
+	useEffect(() => {
+		const searchResultsLocal = parachains.filter(parachainObj => {
+				return parachainObj.title.toLowerCase().includes(searchInput.toLowerCase());
+		});
+
+		setSearchResults(searchResultsLocal);
+	}, [searchInput])
 
 	const chainCircle = (image:string, title:string) => {
     const link = ["moonbase", "moonriver", "moonbeam", "kilt", "automata"].includes(title) ? `https://${title}.polkassembly.network` : `https://${title}.polkassembly.io`;
@@ -19,15 +36,49 @@ export default function ChainsSection() {
 	
 	return (
 		<div className='container'>
-			<div className="grid grid-cols-2 lg:grid-cols-4 mx-6 xl:mx-48 gap-y-4 lg:gap-y-14 mt-20 lg:mt-32">
-				{parachains.map(parachainObj =>
-					chainCircle(parachainObj.image, parachainObj.title)
-				)}
+
+			<div className="relative mt-20 w-[90%] md:w-60 mx-6 xl:mx-52">
+				<label className="sr-only"> Search </label>
+
+				<input
+					className="w-full py-2 pl-3 pr-16 text-sm border-2 rounded-full border-pa-purple shadow-[5px_4px_5px_0px_#F9D2FF]"
+					id="search"
+					type="text"
+					placeholder="Search"
+					value={searchInput}
+					onChange={(e) => setSearchInput(e.target.value)}
+				/>
+
+				<button className="absolute p-1 text-white -translate-y-1/2 bg-pa-pink rounded-full top-1/2 right-4" type="button" onClick={() => setSearchInput('')}>
+					{searchInput ? 
+						<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+							<path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+						</svg>
+							:
+						<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+							<path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+						</svg>
+					}
+				</button>
 			</div>
 
-			<div className='flex items-center justify-center my-16'>
-				<button onClick={() => setLoadMore(!loadMore)} className="rounded-full bg-pa-pink text-white hover:bg-pa-purple hover:text-pa-pink px-5 py-2">{loadMore ? 'Show Less' : 'Load More'}</button>
+			<div className="grid grid-cols-2 lg:grid-cols-4 mx-6 xl:mx-48 gap-y-4 lg:gap-y-14 mt-10 lg:mt-24">
+				{searchInput ? 
+					searchResults.map(parachainObj =>
+						chainCircle(parachainObj.image, parachainObj.title)
+					)
+					:
+					parachains.map(parachainObj =>
+					chainCircle(parachainObj.image, parachainObj.title)
+					)
+				}
 			</div>
+
+			{!searchInput && <div className='flex items-center justify-center my-16'>
+				<button onClick={() => setLoadMore(!loadMore)} className="rounded-full bg-pa-pink text-white hover:bg-pa-purple hover:text-pa-pink px-5 py-2">{loadMore ? 'Show Less' : 'Load More'}</button>
+			</div>}
+			
+			{searchInput && <div className='mb-20'></div>}
 		</div>
 	)
 }
