@@ -104,7 +104,7 @@ export default function Footer({withContactUs = true}: {withContactUs?:boolean})
 										</li>
 
 										<li>
-											<a className="text-white transition hover:text-purple-400/60" rel="noopener noreferrer" target='_blank' href="https://github.com/polkassembly/polkassembly.github.io/issues">
+											<a className="text-white transition hover:text-purple-400/60" rel="noopener noreferrer" target='_blank' href="https://github.com/premiurly/polkassembly/issues">
 												Report an Issue
 											</a>
 										</li>
