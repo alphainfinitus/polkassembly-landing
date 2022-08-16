@@ -18,6 +18,7 @@ import hydradxLogo from '../assets/parachain-logos/hydradx-logo.jpg'
 import karuraLogo from '../assets/parachain-logos/karura-logo.jpg'
 import khalaLogo from '../assets/parachain-logos/khala-logo.png'
 import kiltLogo from '../assets/parachain-logos/kilt-logo.png'
+import kylinLogo from '../assets/parachain-logos/kylin-logo.png'
 import mantaLogo from '../assets/parachain-logos/manta-logo.jpg'
 import moonbaseLogo from '../assets/parachain-logos/moonbase-logo.png'
 import parallelLogo from '../assets/parachain-logos/parallel-logo.jpg'
@@ -112,6 +113,10 @@ const parachainsArr: {title:string, image:string}[] = [
 	{
 		image: kiltLogo,
 		title: 'kilt'
+	},
+	{
+		image: kylinLogo,
+		title: 'kylin'
 	},
 	{
 		image: mantaLogo,
