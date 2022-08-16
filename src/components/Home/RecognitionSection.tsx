@@ -2,6 +2,8 @@ import React from 'react'
 import SectionHeading from './SectionHeading'
 import substrateBuilders from '../../assets/images/substrate-builders.svg'
 import web3Grant from '../../assets/images/web3-grant.svg'
+import treasuryImg from '../../assets/images/treasury-img.svg'
+
 
 
 export default function RecognitionSection() {
@@ -38,6 +40,19 @@ export default function RecognitionSection() {
               Please see the Substrate projects page that mentions our project.
               <br/>
               <u> <a href='https://substrate.io/ecosystem/projects/' target="_blank" rel="noopener noreferrer" className="text-center text-pa-pink font-semibold">Read More</a> </u>
+            </p>
+          </div>
+
+        </div>
+
+        <div className='mt-20 flex flex-col lg:flex-row lg:-mr-40'>
+          <img src={treasuryImg} className="h-auto w-72 mx-auto lg:w-80 lg:-ml-40 self-center lg:self-start z-10" />
+
+          <div className='z-0 mx-auto lg:-ml-4 mt-10 self-center lg:self-end'>
+            <h2 className='text-xl font-bold text-center lg:text-left mb-4 lg:ml-12'>Funded by Polkadot<br/>and Kusama Treasury</h2>
+
+            <p className="mx-auto text-center lg:text-left mt-1 py-6 px-3 lg:px-12 w-[90%] lg:w-[520px] text-lg border-0 lg:border border-pa-purple lg:shadow-[13px_8px_10px_-5px_#F9D2FF] rounded-2xl">
+              Polkassembly is a recipient of treasury grants from Polkadot as well as Kusama for building the community's official governance platform.
             </p>
           </div>
 
