@@ -35,9 +35,9 @@ export default function ChainsSection() {
   }
 	
 	return (
-		<div className='container'>
+		<div className='container mt-14'>
 
-			<div className="relative mt-20 w-[90%] md:w-60 mx-6 xl:mx-52">
+			<div className="relative mt-16 w-[90%] md:w-60 mx-auto md:mx-6 xl:mx-52">
 				<label className="sr-only"> Search </label>
 
 				<input
@@ -62,11 +62,11 @@ export default function ChainsSection() {
 				</button>
 			</div>
 
-			<div className="grid grid-cols-2 lg:grid-cols-4 mx-6 xl:mx-48 gap-y-4 lg:gap-y-14 mt-10 lg:mt-24">
+			<div className="grid grid-cols-2 lg:grid-cols-4 mx-auto md:mx-6 xl:mx-48 gap-y-4 lg:gap-y-14 mt-10 lg:mt-24 min-h-[100vh] max-h-[100vh] overflow-auto content-start">
 				{searchInput ? 
-					searchResults.map(parachainObj =>
-						chainCircle(parachainObj.image, parachainObj.title)
-					)
+						searchResults.map(parachainObj =>
+							chainCircle(parachainObj.image, parachainObj.title)
+						)
 					:
 					parachains.map(parachainObj =>
 					chainCircle(parachainObj.image, parachainObj.title)

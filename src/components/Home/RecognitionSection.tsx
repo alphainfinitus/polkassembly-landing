@@ -52,7 +52,7 @@ export default function RecognitionSection() {
             <h2 className='text-xl font-bold text-center lg:text-left mb-4 lg:ml-12'>Funded by Polkadot<br/>and Kusama Treasury</h2>
 
             <p className="mx-auto text-center lg:text-left mt-1 py-6 px-3 lg:px-12 w-[90%] lg:w-[520px] text-lg border-0 lg:border border-pa-purple lg:shadow-[13px_8px_10px_-5px_#F9D2FF] rounded-2xl">
-              Polkassembly is a recipient of treasury grants from Polkadot as well as Kusama for building the community's official governance platform.
+              Polkassembly is a recipient of treasury grants from Polkadot as well as Kusama for building the community's go-tp governance platform.
             </p>
           </div>
 
