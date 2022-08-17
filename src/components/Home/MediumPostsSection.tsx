@@ -67,6 +67,7 @@ export default function MediumPostsSection() {
           navigation={true}
           modules={[EffectCoverflow, Navigation]}
           className="mySwiperss"
+          initialSlide={1}
         >
           {
             blogs.map((blogObj, i) => {
