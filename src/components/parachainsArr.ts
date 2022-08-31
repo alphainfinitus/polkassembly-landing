@@ -95,7 +95,7 @@ const parachainsArr: {title:string, image:string}[] = [
 		title: 'gear'
 	},
 	{
-		image: heikoLogo,
+		image: parallelLogo,
 		title: 'heiko'
 	},
 	{
