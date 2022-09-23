@@ -8,7 +8,7 @@ export default function LiveChainsSection() {
   const parachains = parachainsArr;
 
   const chainCircle = (image:string, title:string) => {
-    const link = ["moonbase", "moonriver", "moonbeam", "kilt", "automata"].includes(title) ? `https://${title}.polkassembly.network` : `https://${title}.polkassembly.io`;
+    const link = ["moonbase", "moonriver", "moonbeam", "kilt"].includes(title) ? `https://${title}.polkassembly.network` : `https://${title}.polkassembly.io`;
     
     return(
       <a href={link} key={title} rel="noopener noreferrer" target="_blank" className="flex flex-col items-center justify-center my-2 lg:my-0 mx-auto md:mx-6 rounded-full h-24 w-24 md:h-48 md:w-48 border-[1px] border-pa-pink-light transition-transform transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_8px_10px_-5px_#E5007A]">

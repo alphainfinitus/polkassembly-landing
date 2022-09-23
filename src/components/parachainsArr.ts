@@ -9,11 +9,9 @@ import amplitudeLogo from '../assets/parachain-logos/amplitude-logo.png'
 import astarLogo from '../assets/parachain-logos/astar-logo.png'
 import automataLogo from '../assets/parachain-logos/automata-logo.jpg'
 import basiliskLogo from '../assets/parachain-logos/basilisk-logo.jpg'
-import bifrostLogo from '../assets/parachain-logos/bifrost-logo.png'
 import calamariLogo from '../assets/parachain-logos/calamari-logo.png'
 import centrifugeLogo from '../assets/parachain-logos/centrifuge-logo.png'
 import gearLogo from '../assets/parachain-logos/gear-logo.jpg'
-import heikoLogo from '../assets/parachain-logos/hydradx-logo.jpg'
 import hydradxLogo from '../assets/parachain-logos/hydradx-logo.jpg'
 import karuraLogo from '../assets/parachain-logos/karura-logo.jpg'
 import khalaLogo from '../assets/parachain-logos/khala-logo.png'
@@ -32,6 +30,8 @@ import tanganikaLogo from '../assets/parachain-logos/tanganika-logo.png'
 import tinkerLogo from '../assets/parachain-logos/chain-logo.jpg'
 import turingLogo from '../assets/parachain-logos/turing-logo.png'
 import westendLogo from '../assets/parachain-logos/westend-logo.jpg'
+import composableLogo from '../assets/parachain-logos/composable-finance-logo.png'
+import crustLogo from '../assets/parachain-logos/crust-logo.svg'
 
 const parachainsArr: {title:string, image:string}[] = [
 	{
@@ -79,16 +79,24 @@ const parachainsArr: {title:string, image:string}[] = [
 		title: 'basilisk'
 	},
 	{
-		image: bifrostLogo,
-		title: 'bifrost'
-	},
-	{
 		image: calamariLogo,
 		title: 'calamari'
 	},
 	{
 		image: centrifugeLogo,
 		title: 'centrifuge'
+	},
+	{
+		image: composableLogo,
+		title: 'composable'
+	},
+	{
+		image: crustLogo,
+		title: 'crust'
+	},
+	{
+		image: crustLogo,
+		title: 'crustShadow'
 	},
 	{
 		image: gearLogo,
