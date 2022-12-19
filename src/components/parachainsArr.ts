@@ -32,6 +32,17 @@ import turingLogo from '../assets/parachain-logos/turing-logo.png'
 import westendLogo from '../assets/parachain-logos/westend-logo.jpg'
 import composableLogo from '../assets/parachain-logos/composable-finance-logo.png'
 import crustLogo from '../assets/parachain-logos/crust-logo.svg'
+import equilibriumLogo from '../assets/parachain-logos/equilibrium.png'
+import frequencyLogo from '../assets/parachain-logos/frequency-logo.png'
+import gmordieLogo from '../assets/parachain-logos/gmordie-logo.png'
+import genshiroLogo from '../assets/parachain-logos/genshiro.png'
+import picassoLogo from '../assets/parachain-logos/picasso-logo.svg'
+import varaLogo from '../assets/parachain-logos/vara-logo.svg'
+import xxcoinLogo from '../assets/parachain-logos/xxcoin-logo.svg'
+import pichiuLogo from '../assets/parachain-logos/pichiu-logo.png'
+import snowLogo from '../assets/parachain-logos/snow-logo.png'
+import polymeshLogo from '../assets/parachain-logos/polymesh-logo.png'
+import tidechainLogo from '../assets/parachain-logos/tidechain-logo.svg'
 
 const parachainsArr: {title:string, image:string}[] = [
 	{
@@ -177,7 +188,55 @@ const parachainsArr: {title:string, image:string}[] = [
 	{
 		image: westendLogo,
 		title: 'westend'
-	}
+	},
+	{
+		image: equilibriumLogo,
+		title: 'equilibrium'
+	},
+	{
+		image: frequencyLogo,
+		title: 'frequency-rococo'
+	},
+	{
+		image: genshiroLogo,
+		title: 'genshiro'
+	},
+	{
+		image: gmordieLogo,
+		title: 'gmordie'
+	},
+	{
+		image: picassoLogo,
+		title: 'picasso'
+	},
+	{
+		image: pichiuLogo,
+		title: 'pichiu'
+	},
+	{
+		image: kylinLogo,
+		title: 'pichiu-rococo'
+	},
+	{
+		image: polymeshLogo,
+		title: 'polymesh'
+	},
+	{
+		image: snowLogo,
+		title: 'snow'
+	},
+	{
+		image: tidechainLogo,
+		title: 'tidechain'
+	},
+	{
+		image: varaLogo,
+		title: 'vara'
+	},
+	{
+		image: xxcoinLogo,
+		title: 'Xx'
+	},
 ];
 
 export default parachainsArr;
