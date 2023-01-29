@@ -43,7 +43,7 @@ export default function Navbar() {
             </>
           }
 
-          <a href="https://docs.google.com/document/d/1hXUIp-1ptWNK0-BenbEnC_B5LU0c5FDlURE0N6TRUh4" rel="noopener noreferrer" target="_blank" className='mx-0 mr-3 md:mx-6 font-normal text-sm md:text-base md:font-semibold hover:text-pa-pink'>Docs</a>
+          <a href="http://docs.polkassembly.io/" rel="noopener noreferrer" target="_blank" className='mx-0 mr-3 md:mx-6 font-normal text-sm md:text-base md:font-semibold hover:text-pa-pink'>Docs</a>
 
           <NavLink to='/launch-app' className={({ isActive }) => isActive ? `bg-pa-pink text-white ${launchAppBtnClasses}` : `text-pa-pink ${launchAppBtnClasses}`}>
             <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-pa-pink group-hover:translate-x-0 ease">

@@ -1,5 +1,6 @@
 import React from 'react'
 import polkassemblyLogoWhite from '../../assets/images/pa-logo-white.svg'
+import ideaIcon from '../../assets/images/idea.svg'
 import contactUsBg from '../../assets/images/contact-us-bg.svg'
 
 export const socialLinksUL = (colorClass?: string, iconClass ?: string, classes ?: string) => {
@@ -86,6 +87,9 @@ export default function Footer({withContactUs = true}: {withContactUs?:boolean})
 							<div className="flex justify-center text-teal-300 sm:justify-start">
 								<img src={polkassemblyLogoWhite} className="h-auto w-52 md:w-64" />
 							</div>
+							<div>
+								{socialLinksUL('', 'w-5 h-5', 'justify-center sm:justify-start')}
+							</div>
 						</div>
 
 						{/* Links */}
@@ -163,9 +167,19 @@ export default function Footer({withContactUs = true}: {withContactUs?:boolean})
 											</span>
 										</a>
 									</li>
-
 									<li>
-										{socialLinksUL('', 'w-5 h-5', 'justify-center md:justify-start')}
+										<a
+											className="flex items-center justify-center sm:justify-start gap-1.5 group"
+											href="https://feedback.polkassembly.io/"
+											rel="noopener noreferrer"
+											target="_blank"
+										>
+											<img src={ideaIcon} className='w-5 h-5' alt='feature request' />
+
+											<span className="text-white transition group-hover:text-purple-400/60">
+												Feature Request
+											</span>
+										</a>
 									</li>
 								</ul>
 							</div>
