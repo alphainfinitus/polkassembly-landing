@@ -29,7 +29,7 @@ export default function ChainsSection() {
     return(
       <a href={link} key={title} rel="noopener noreferrer" target="_blank" className="flex flex-col justify-self-center self-center items-center justify-center my-2 lg:my-0 mx-auto md:mx-6 rounded-full h-24 w-24 md:h-48 md:w-48 border-[1px] border-pa-pink-light transition-transform transform hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_8px_10px_-5px_#E5007A]">
         <div className='flex items-center justify-center h-12 md:h-16'><img src={image} className="rounded-full h-auto w-8 md:w-16 mx-auto" /></div>
-        <h3 className='mt-1 md:mt-5 text-[10px] font-medium md:text-lg md:font-semibold text-gray-600 capitalize tracking-normal lg:tracking-widest text-center leading-none md:leading-auto px-2'>{title}</h3>
+        <h3 className={`mt-1 md:mt-5 text-[10px] font-medium md:text-lg md:font-semibold text-gray-600 ${title === 'Xx'? 'uppercase': 'capitalize'} tracking-normal lg:tracking-widest text-center leading-none md:leading-auto px-2`}>{title}</h3>
       </a>
     )
   }
