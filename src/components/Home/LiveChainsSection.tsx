@@ -15,7 +15,7 @@ export default function LiveChainsSection() {
         <div className="flex items-center justify-center h-12 md:h-16">
           <img src={image} className="rounded-full h-auto w-8 md:w-16 mx-auto" />
         </div>
-        <h3 className='mt-1 md:mt-5 text-[10px] font-medium md:text-lg md:font-semibold text-gray-600 capitalize tracking-normal lg:tracking-widest text-center leading-none md:leading-auto px-2'>{title}</h3>
+        <h3 className={`mt-1 md:mt-5 text-[10px] font-medium md:text-lg md:font-semibold text-gray-600 ${title === 'Xx'? 'uppercase': 'capitalize'} tracking-normal lg:tracking-widest text-center leading-none md:leading-auto px-2`}>{title}</h3>
       </a>
     )
   }
