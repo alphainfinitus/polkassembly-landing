@@ -26,7 +26,7 @@ import polkadexLogo from '../assets/parachain-logos/polkadex-logo.jpg'
 import robonomicsLogo from '../assets/parachain-logos/robonomics-logo.jpg'
 import shibuyaLogo from '../assets/parachain-logos/shiden-logo.jpg'
 import shidenLogo from '../assets/parachain-logos/shiden-logo.jpg'
-import tanganikaLogo from '../assets/parachain-logos/tanganika-logo.png'
+// import tanganikaLogo from '../assets/parachain-logos/tanganika-logo.png'
 import tinkerLogo from '../assets/parachain-logos/chain-logo.jpg'
 import turingLogo from '../assets/parachain-logos/turing-logo.png'
 import westendLogo from '../assets/parachain-logos/westend-logo.jpg'
@@ -173,10 +173,10 @@ const parachainsArr: {title:string, image:string}[] = [
 		image: shidenLogo,
 		title: 'shiden'
 	},
-	{
-		image: tanganikaLogo,
-		title: 'tanganika'
-	},
+	// {
+	// 	image: tanganikaLogo,
+	// 	title: 'tanganika'
+	// },
 	{
 		image: tinkerLogo,
 		title: 'tinker'

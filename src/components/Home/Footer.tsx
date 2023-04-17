@@ -194,7 +194,7 @@ export default function Footer({withContactUs = true}: {withContactUs?:boolean})
 							</p>
 
 							<p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
-								&copy; Premiurly {new Date().getFullYear()}
+								&copy; Polka Labs Private Limited {new Date().getFullYear()}
 							</p>
 						</div>
 					</div>
